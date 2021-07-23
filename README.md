@@ -50,6 +50,17 @@ docker-compose ps
 ```
 # Dzzoffice初始化
 
+## 浏览器访问
+
+```python
+# 登陆链接
+http://宿主机IP:1800
+# 普通用户登陆入口：
+http://宿主机IP:1800/user.php?mod=login
+# 管理员登陆入口：
+http://宿主机IP:1800/admin.php?mod=orguser
+```
+
 这里需要注意以下三点，具体如下：
 
 ## MySQL连接配置
