@@ -78,3 +78,18 @@ grant all privileges on *.* to 'root'@'%' identified by 'gmtools';
 # 刷新表
 flush privileges;
 ```
+## 应用启用
+
+管理 --> 应用市场 --> 在应用市场内找到对应应用，单击一键安装；
+
+管理 --> 应用市场 --> 已安装 中 点击启用按钮 启用此应用
+
+[![](https://pic.imgdb.cn/item/60fa2c6d5132923bf8895965.jpg)](https://pic.imgdb.cn/item/60fa2c6d5132923bf8895965.jpg)
+
+## 实现在线预览和编辑
+
+管理 --> 应用市场 --> 在应用市场内找到` onlyoffice `应用 点击 一键安装，安装完后，你可以通过` http://ip:8000 `地址来测试onlyoffice是否安装成功，成功后进入下一步设置;
+
+管理 --> 应用市场 --> 已安装 中 点击设置按钮 进入设置页面
+
+[![](https://pic.imgdb.cn/item/60fa2d375132923bf88bb455.jpg)](https://pic.imgdb.cn/item/60fa2d375132923bf88bb455.jpg)
