@@ -38,7 +38,8 @@ mkdir html/ mysql/
 ```python
 # 使用我们上面build的dzzoffice:2.02.1镜像
 docker run -itd --name dzzoffice_temp registry.cn-shanghai.aliyuncs.com/tengfeiwu/dzzoffice:2.02.1
-# docker cp dzzoffice_temp:/var/www/html html/
+# 拷贝容器内文件
+docker cp dzzoffice_temp:/var/www/html html/
 ```
 ## 启动服务
 
