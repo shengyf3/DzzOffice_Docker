@@ -1,0 +1,52 @@
+version: "2.2"
+networks:
+  internal_network:
+services:
+  mysql:
+    restart: always
+    networks:
+      - internal_network
+    image: mysql:5.7.27
+    environment:
+      - MYSQL_ROOT_PASSWORD=gmtools
+    volumes:
+      - /data/wutengfei/dzzoffice/mysql:/var/lib/mysql
+    expose:
+      - "3306"
+    ports:
+      - "3307:3306"
+  phpmyadmin:
+    restart: always
+    image: phpmyadmin/phpmyadmin:4.7.9-1
+    links:
+      - "mysql"
+    environment:
+      - PMA_HOST=mysql
+    volumes:
+      - /data/wutengfei/dzzoffice/mysql:/var/lib/mysql
+    expose:
+      - "80"
+    ports:
+      - "1801:80"
+  dzzoffice:
+    restart: always
+    networks:
+      - internal_network
+    image: registry.cn-shanghai.aliyuncs.com/tengfeiwu/dzzoffice:2.02.1  #land007/dzzoffice:latest
+    volumes:
+      - /data/wutengfei/dzzoffice/html:/var/www/html
+    links:
+      - "mysql"
+    expose:
+      - "80"
+    ports:
+      - "1800:80"
+  onlyoffice:
+    image: onlyoffice/documentserver:latest
+    restart: always
+    networks:
+      - internal_network
+    expose:
+      - "80"
+    ports:
+      - "8000:80"
