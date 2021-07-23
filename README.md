@@ -40,6 +40,8 @@ mkdir html/ mysql/
 docker run -itd --name dzzoffice_temp registry.cn-shanghai.aliyuncs.com/tengfeiwu/dzzoffice:2.02.1
 # 拷贝容器内文件
 docker cp dzzoffice_temp:/var/www/html html/
+# 删除 dzzoffice_temp
+docker rm -f dzzoffice_temp
 ```
 ## 启动服务
 
