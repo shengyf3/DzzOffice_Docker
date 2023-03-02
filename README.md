@@ -1,6 +1,6 @@
 # 前提
 
-在开始` Dzzoffice `部署之前，系统应该已安装` docker `和` docker-compose `。如果想把此项目与其他容器项目在系统上隔离开来，可尝试使用虚拟环境` virtualenv `。
+在开始` Dzzoffice `部署之前，系统应该已安装` docker `和` [docker-compose](https://blog.csdn.net/pushiqiang/article/details/78682323) `。如果想把此项目与其他容器项目在系统上隔离开来，可尝试使用虚拟环境` virtualenv `。
 
 当前使用的是` Dzzoffice:2.02.1 `最新版本。
 
@@ -107,3 +107,7 @@ flush privileges;
 管理 --> 应用市场 --> 已安装 中 点击设置按钮 进入设置页面
 
 [![](https://pic.imgdb.cn/item/60fa2d375132923bf88bb455.jpg)](https://pic.imgdb.cn/item/60fa2d375132923bf88bb455.jpg)
+
+## OnlyOffice令牌错误
+
+可参考文档[Debian系统解决OnlyOffice令牌错误](https://www.bilibili.com/read/cv21378264/)。
