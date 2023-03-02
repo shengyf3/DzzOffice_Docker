@@ -31,7 +31,7 @@ docker push registry.cn-shanghai.aliyuncs.com/tengfeiwu/dzzoffice:2.02.1
 ## 创建挂载目录
 
 ```python
-mkdir html/ mysql/
+mkdir mysql/
 ```
 ## 拷贝 html
 
