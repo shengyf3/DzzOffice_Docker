@@ -108,6 +108,10 @@ flush privileges;
 
 [![](https://pic.imgdb.cn/item/60fa2d375132923bf88bb455.jpg)](https://pic.imgdb.cn/item/60fa2d375132923bf88bb455.jpg)
 
+## 实现文件共享和管理
+
+管理 --> 应用市场 --> 在应用市场内找到”网盘“，单击一键安装。
+
 ## OnlyOffice令牌错误
 
 可参考文档[Debian系统解决OnlyOffice令牌错误](https://www.bilibili.com/read/cv21378264/)。
