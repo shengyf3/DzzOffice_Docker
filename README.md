@@ -1,3 +1,8 @@
+# 说明：
+本项目来自 gitee:
+https://gitee.com/tengfeiwu/dzzoffice
+
+
 # 前提
 
 在开始` Dzzoffice `部署之前，系统应该已安装` docker `和` [docker-compose](https://blog.csdn.net/pushiqiang/article/details/78682323) `。如果想把此项目与其他容器项目在系统上隔离开来，可尝试使用虚拟环境` virtualenv `。
